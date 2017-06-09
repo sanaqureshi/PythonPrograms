@@ -1,0 +1,3 @@
+import os
+os.mkdir("SanaQ")
+os.listdir

@@ -1,0 +1,12 @@
+import sqlite3
+conn = sqlite3.connect('employee.db')
+c = conn.cursor()
+
+#Create table
+c.execute("DROP TABLE IF EXISTS Employee_Details")
+c.execute('''CREATE TABLE Employee_Details(Emp_Id, Emp_Name, Salary, Mobile_No)''')
+print"Table Creation has Done Successfully"
+
+#Insert a row of data
+c.execute("INSERT INTO Employee_Details VALUES('50021', 'Sana Qureshi', '25000', '7045186692'")
+print"Insertion has done succesfully"
