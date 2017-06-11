@@ -1,0 +1,9 @@
+def max(first_No, second_No):
+	if first_No > second_No:
+		return first_No
+	else:
+		return second_No
+
+def getNumbersFromUser():
+	userFirstNo = int(input("Enter First Number :"))
+	userSecondNo = int(input("Enter Second Num
